@@ -1,0 +1,277 @@
+a{text-decoration: none;}
+ul,li{
+    list-style: none;
+}
+table{
+    border-collapse: collapse;
+}
+tr,th,td{
+    border: 1px solid #dddddd;
+    padding: 4px 14px;
+}
+.marigin{
+    margin: 10px 0;
+}
+.marigin input{
+    margin:4px 0;
+}
+.logobox{
+    display:inline-block;
+    width:80%;
+}
+.logobox ul{
+    display: inline-block;
+    width: 100%;
+}
+.logobox li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.showMore {
+    display: block;
+    text-align: center;
+}
+.style{
+    color: red;
+}
+.fruits li{
+}
+.margin {
+    display: block;
+    margin: 10px 0;
+}
+
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-face{
+    display: flex;
+    justify-content: space-between;
+}
+.second-face .pip:last-child{
+    align-self: flex-end;
+}
+.three-face{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.three-face .pip:nth-child(2){
+    align-self: center;
+}
+.three-face .pip:nth-child(3){
+    align-self: flex-end;
+}
+.four-face{
+
+}
+.four-face .pip:nth-child(2){
+
+}
+.four-face .pip:nth-child(3){
+
+}
+.four-face .pip:nth-child(4){
+
+}
+[class$="face"] {
+    margin: 16px;
+    padding: 4px;
+    background-color: #e7e7e7;
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+    box-shadow:
+            inset 0 5px white,
+            inset 0 -5px #bbb,
+            inset 5px 0 #d7d7d7,
+            inset -5px 0 #d7d7d7;
+
+    border-radius: 10%;
+}
+
+.pip {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 4px;
+
+    background-color: #333;
+    box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+.Grid {
+    display: flex;
+}
+
+.Grid-cell {
+    flex: 1;
+}
+.wrapper{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-flow:row wrap;font-weight:bold;text-align:center}
+.wrapper > *{padding:10px;flex:1 100%}
+.header{background:tomato}
+.footer{background:lightgreen}
+.main{text-align:left;background:deepskyblue}
+.aside-1{background:gold}
+.aside-2{background:hotpink}
+@media all and (min-width:600px){.aside{flex:1 auto}
+}@media all and (min-width:800px){.main{flex:2 0px}
+    .aside-1{order:1}
+    .main{order:2}
+    .aside-2{order:3}
+    .footer{order:4}
+}
+
+.demo-box{
+    display: flex;
+    background: darkolivegreen;
+    flex-direction: row;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.m-title{
+    flex: 1 100%;
+    background: rebeccapurple;
+    flex-flow: row wrap;
+}
+.demo-box .m{
+    padding: 10px 20px;
+}
+.m-1{
+    flex: 1;
+    background: blanchedalmond;
+}
+.m-2{
+    flex: 1;
+    background: blue;
+}
+.m-3{
+    flex: 1;
+    background: palegreen;
+}
+.m-11{
+
+}
+.m-12{
+
+}
+#list {
+    background: blue;
+    width: 10em;
+    height: 20px;
+    /* overflow: hidden; */
+    position: relative;
+}
+ul.listUl {
+    background: rebeccapurple;
+    height: 20px;
+    /* overflow: hidden; */
+    /* position: relative; */
+    width: 10em;
+}
+div#listFruit {
+    position: absolute;
+    top: 0;
+     display: none;
+}
+#tabNav ul li{
+    float: left;
+}
+div#tabNav {
+    position: relative;
+    display: flex;
+}
+div#tab {
+    position: absolute;
+    display: flex;
+    left: 50px;
+    visibility: hidden;
+}
+div#tabList {
+    display: flex;
+    position: absolute;
+    left: 50px;
+    visibility: hidden;
+}
+.select{
+    background-color: rgb(10,167,112);
+    color: white;
+}
+.select{
+    background-color: rgb(10,167,112);
+    color: white;
+}
+.show{
+    visibility: visible;
+}
+.none{
+    visibility: hidden;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    top:0;
+
+}
+#selectBox{
+    position: relative;
+}
+#selectList{
+    position: absolute;
+    top: 50px;
+    /*visibility: hidden;*/
+    display: none;
+}
+
+#allcontent{
+    width:1024px;
+    padding:15px;
+    margin:100px auto 0;
+    border: 1px dashed orange
+}
+
+p{display:inline;
+    /*margin-left:10px*/
+}
+
+#count{visibility:hidden;
+    margin-left:83px
+}
+
+#em{background:orange;
+    width:153px;
+    margin:3px 0 7px 60px
+}
+
+em{opacity:0.2;
+    display:inline-block;
+    width:51px;
+    text-align:center
+}
+
+em:first-child{background:orange;
+    opacity:1
+}
+
+.active{background:orange;
+    opacity:1
+}
+#allcontent p{
+    margin: 0;
+}
+.tipRed,.err{
+    color: red;
+}
+.ok{
+    color: green;
+}
+em.red,
+.red{
+    background: red;
+    opacity: 1;
+ }

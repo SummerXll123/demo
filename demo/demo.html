@@ -1,0 +1,349 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <script type="text/javascript">
+        function loadXMLDoc() {
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "/ajax/demo_get.asp?t=" + Math.random(), true);
+            xmlhttp.send();
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+    <script type="text/javascript" src="js/summer.js"></script>
+    <script src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/swfobject_0178953.js"
+            async=""></script>
+</head>
+<body>
+
+<h2>AJAX</h2>
+<button type="button" onclick="loadXMLDoc()">请求数据</button>
+<div id="myDiv">
+
+
+</div>
+<div class="tableData">
+    <p>js改变表格背景颜色,2种方法</p>
+    <table id="tableId">
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>单位</th>
+            <th>手机号</th>
+            <th>邮箱</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>xll</td>
+            <td>29</td>
+            <td>苏州</td>
+            <td>888888888</td>
+            <td>888888888@</td>
+        </tr>
+        <tr>
+            <td>xll</td>
+            <td>29</td>
+            <td>苏州</td>
+            <td>888888888</td>
+            <td>888888888@</td>
+        </tr>
+        <tr>
+            <td>xll</td>
+            <td>29</td>
+            <td>苏州</td>
+            <td>888888888</td>
+            <td>888888888@</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: left;">建议：</td>
+
+        </tr>
+        </tbody>
+    </table>
+    <div class="input-eg marigin">
+        <p>js弹出获取选中元素的个数</p>
+        <input type="checkbox" value="1" name="check" checked="checked">
+        <input type="checkbox" value="2" name="check">
+        <input type="checkbox" value="3" name="check" checked="checked">
+        <input type="checkbox" value="3" name="check" checked="checked">
+        <input type="checkbox" value="4" name="check" disabled="disabled">
+        <input type="button" value="js 选中的个数" id="btn">
+        <input type="button" value="jq 选中的个数" id="btn2">
+        <div class="Num" id="NumCheck">选中的个数为：</div>
+
+    </div>
+    <div class="marigin">
+        <form action="#" id="form1">
+            <p>表单属性过滤选择器</p>
+            可用元素：<input type="text" name="add" value="可用文本框"><br>
+            不可用元素：<input type="text" name="email" value="不可用文本框" disabled="disabled"><br>
+            可用元素：<input type="text" name="che" value="可用文本框"><br>
+            不可用元素：<input type="text" name="name" value="不可用文本框" disabled="disabled"><br>
+            多选框：<br>
+            <input type="checkbox" value="test1" checked="checked" name="newsletter">test1
+            <input type="checkbox" value="test2" name="newsletter">test2
+            <input type="checkbox" value="test3" name="newsletter">test3
+            <input type="checkbox" value="test4" name="newsletter">test4
+            <input type="checkbox" value="test5" name="newsletter">test5</br>
+            下拉列表1:<br>
+            <select name="test" class="marigin">
+                <option>浙江</option>
+                <option>杭州</option>
+                <option>安徽</option>
+                <option>湖北</option>
+            </select></br>
+            下拉列表2:<br>
+            <select name="test2">
+                <option>浙江</option>
+                <option>杭州</option>
+                <option>安徽</option>
+                <option>湖北</option>
+            </select>
+        </form>
+    </div>
+    <div class="margin">
+        <p>转义字符</p>
+        <div id="id#b">转义字符1</div>
+        <div id="id[2]">转义字符2</div>
+    </div>
+    <div class="logobox margin" style="border: 1px solid #ddd">
+        <ul class="logo">
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">尼康</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">佳能7</a><i>123</i></li>
+            <li><a href="#">松下</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">佳能</a><i>123</i></li>
+            <li><a href="#">最后其他品牌</a><i>123</i></li>
+        </ul>
+        <div class="showMore">
+            <a href="javascript:void(0);">显示全部品牌</a>
+        </div>
+    </div>
+</div>
+<div class="fruits margin">
+    <p title="你最喜欢的水果是">你最喜欢的水果是：</p>
+    <strong title="选择你最喜欢的水果">选择你最喜欢的水果：</strong>
+    <strong title="选择你最喜欢的水果">选择你最喜欢的水果：</strong>
+    <span title="选择你最喜欢的水果">选择你最喜欢的水果22：</span>
+    <span title="选择你最喜欢的水果">选择你最喜欢的水果22：</span>
+    <i title="选择你最喜欢的水果">选择你最喜欢的水果22：</i>
+    <ul>
+        <li title="pg">苹果</li>
+        <li>香蕉</li>
+        <li>桃子</li>
+        <li title="change" class="idChange">获取属性并改变</li>
+    </ul>
+    <div class="linkFruits"></div>
+</div>
+<div class="margin">
+    <p>邮箱验证</p>
+    <input type="text" id="address" value="输入邮箱地址">
+    <input type="checkbox" checked="checked">留在首页
+    <input type="checkbox">进入邮箱<br>
+    <input type="text" id="password" value="输入邮箱密码">
+    <input type="button" value="登录">
+    <input type="">记住状态
+</div>
+<div id="n1">
+    <div id="n2">
+        <ul id="n3">
+            <li id="n4">item1</li>
+            <li id="n5">item2</li>
+            <li id="n6">item3</li>
+        </ul>
+    </div>
+</div>
+<div class="margin">
+    <div class="first-face">
+        <span class="pip"></span>
+    </div>
+    <div class="second-face">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <div class="three-face">
+        <span class="pip"></span>
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <div class="four-face">
+        <span class="pip"></span>
+        <span class="pip"></span>
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+</div>
+<div class="margin">
+    <div class="Grid">
+        <div class="Grid-cell">sdsd</div>
+        <div class="Grid-cell">2222222222222</div>
+        <div class="Grid-cell">444444</div>
+    </div>
+</div>
+<div class="wrapper">
+    <header class="header">Header</header>
+    <article class="main">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </article>
+    <aside class="aside aside-1">Aside 1</aside>
+    <aside class="aside aside-2">Aside 2</aside>
+    <footer class="footer">Footer</footer>
+</div>
+<!--<div class="margin">-->
+    <div class="demo-box">
+        <h3 class="m-title">title</h3>
+        <div class="m m-1">
+            <div class="m-11">ddd</div>
+            <div class="m-12">ddddll</div>
+        </div>
+        <div class="m m-2">ddddddddddd</div>
+        <div class="m m-3">llllllllll</div>
+    </div>
+<!--</div>-->
+<div id="list">
+    <div id="listUl">全部</div>
+    <div id="listFruit">
+        <ul>
+            <li data-id="1">苹果</li>
+            <li data-id="2">例子</li>
+            <li data-id="3">香蕉</li>
+        </ul>
+    </div>
+</div>
+<div id = "user" data-uid = "12345" data-uname = "脚本之家" > </div>
+<div class="margin">
+   <table id="tableName">
+       <thead>
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>操作</th>
+            </tr>
+       </thead>
+       <tbody id="tbody">
+           <tr>
+               <td>xh001</td>
+               <td>小明</td>
+               <td>
+                   <input type="button" class="deleteBtn" value="删除">
+               </td>
+           </tr>
+           <tr>
+               <td>xh001</td>
+               <td>小明</td>
+               <td>
+                   <input type="button" class="deleteBtn" value="删除">
+               </td>
+           </tr>
+       </tbody>
+   </table>
+    <input type="button" id="addBtn" value="添加一行">
+
+</div>
+<div class="margin" id="student">
+    <p>找出都是大一的女生——数组</p>
+    <!--小A,女,21,大一<br>小D,女,21,大一<br>小F,男,21,大一<br>小I,女,20,大一<br>-->
+    <div id="stuArr"></div>
+<!--    大一人数: 4
+    <br>小A<br>小D<br>小I<br>-->
+    <div class="marigin">
+        <input type="text1" id="text1">
+        <select name="" id="select">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <input type="text" id="text2">
+        <input type="button" value="=" id="countBtn">
+        <input type="text" id="fruit">
+    </div>
+    <div class="margin">
+        <div id="todayDate">
+
+        </div>
+    </div>
+    <div class="margin">
+        <label>姓名：</label><input type="text" name="name" data-leixing="姓名" id="name" class="requird"><span id="span" class="tip"></span><br>
+        <label>邮箱：</label><input type="text" name="email" data-leixing="邮箱" id="email3" class="requird"><span class="tip"></span><br>
+        <label>身份证：</label><input type="text" name="personId" id="personId" class="requird"><span class="tip"></span><br>
+        <input type="button" value="确认" id="inputBtn">
+    </div>
+    <div class="margin">
+        <p>tab切换</p>
+        <div id="tanContainer">
+            <div id="tabNav">
+                <ul>
+                    <li>标题一</li>
+                    <li>标题二</li>
+                    <li>标题三</li>
+                    <li>标题四</li>
+                </ul>
+            </div>
+            <div id="tabList">
+                <div id="tab1">
+                    <ul>
+                        <li>ddd</li>
+                        <li>ddd</li>
+                        <li>ddd</li>
+                    </ul>
+                </div>
+                <div id="tab2">内容二</div>
+                <div id="tab3">内容三</div>
+                <div id="tab4">内容四</div>
+            </div>
+    </div>
+    </div>
+    <div class="margin" id="selectBox">
+        <p>模拟下拉框</p>
+        <input type="text" value="全部" id="selectWrap">
+        <div class="selectList" id="selectList">
+            <ul>
+                <li data-name="yingwen" class="cource">英文</li>
+                <li data-name="shuxue" class="cource">数学</li>
+                <li data-name="waiyu" class="cource">外语</li>
+            </ul>
+        </div>
+    </div>
+    <form id="allcontent">
+
+        <div>
+            <label><b>会员名：</b><input type="text" name=""></label><p></p>
+        </div>
+        <div id="count">0个字符</div>
+        <div>
+            <label><b>密码：</b><input type="text"></label><p></p>
+        </div>
+        <div id="em">
+            <em class="red">弱</em><em>中</em><em>强</em>
+        </div>
+        <div>
+            <label><b>确认密码：</b><input type="text" disabled></label><p></p>
+        </div>
+            <div id="btn-input">
+                <input type="button" value="注册" id="btn-login">
+            </div>
+    </form>
+</div>
+</body>
+</html>
