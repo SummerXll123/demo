@@ -323,3 +323,48 @@ em.red,
 #buttons .on{
     background: green;
 }
+.notice{
+    border: 1px solid #dddddd;
+    width: 298px;
+    height: 200px;
+    overflow: hidden;
+}
+div#notice-tit {
+    height: 27px;
+    background: #f7f7f7;
+    position: relative;
+}
+div#notice-txt {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+}
+.mod{
+    position: absolute;
+}
+.mod ul li {
+    width: 300px;
+    border: none;
+}
+ul.notice-ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /*position: absolute;*/
+}
+.notice li{
+    width: 75px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.notice li a:hover{
+    color: red;
+}
+.notice .sel {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
