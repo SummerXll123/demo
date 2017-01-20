@@ -1,0 +1,277 @@
+html {
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+
+a, button, input {
+    outline: none;
+}
+
+.g-header {
+    display: flex;
+}
+
+.main-hd {
+    padding: 3em 2em;
+}
+
+.g-content {
+    display: flex;
+    margin-right: 2em;
+}
+
+.vipDown {
+    border: 1px solid #ddd;
+    padding: .3em;
+    margin: 0.3em 0;
+}
+
+#vipUl {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: .1em solid #ddd;
+}
+
+.vipDrop {
+    position: absolute;
+    top: 3em;
+    width: 100%;
+    margin: .5em 0;
+}
+
+.vipWrapper li {
+    padding: .3em;
+    margin: 0 .3em;
+    font-size: 1.2em;
+    border-bottom: .2em solid #fff;
+}
+
+.vipWrapper li.on {
+    color: #4eb900;
+    border-bottom: .2em solid #4eb900;
+    cursor: pointer;
+}
+
+#vipWrapper {
+    width: 100%;
+    height: 36px;
+    cursor: pointer;
+}
+
+.g-tab {
+    position: relative;
+    padding: .2em;
+}
+
+.vipPart {
+    display: flex;
+}
+
+.vipStyle {
+    border: .1em solid #dddddd;
+    margin: .3em;
+    padding: 0 1em;
+}
+
+.vip-content ul {
+    padding: 0;
+}
+
+.vip-content li {
+    float: none;
+    padding: .3em 0;
+    font-size: 1em;
+}
+
+.vip-content li strong {
+    color: #fd7127;
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+
+.vipTit {
+    color: #333;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.vipTop {
+    display: flex;
+}
+
+#part-tabBtn {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.btn-ui {
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: #fff;
+}
+.btn-search{
+    background: #3b8704;
+}
+.btn-search:hover{
+    background: #4eb900;
+}
+.btn-import{
+    background: #fd7127;
+}
+.btn-import{
+    background: #ea570a;
+}
+#part-tabBtnUl li.on{
+    background: #fd7127;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*.btn-ui.curr {
+    background: #fd7127;
+    color: #fff;
+}*/
+
+.base-tit {
+    position: relative;
+    padding: .5em 1em;
+    border-bottom: .1em solid #ddd;
+    margin: 0;
+}
+
+.base-tit:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .6em;
+    width: .4em;
+    height: 1.2em;
+    background: #fba824;
+    margin-right: 8.4em;
+}
+
+.base-content {
+    display: flex;
+    margin: .5em 0;
+}
+
+ul.base-ul {
+    margin: 0;
+    padding: 0;
+}
+.base-info {
+    display: flex;
+}
+.must {
+    margin-right: .5em;
+}
+.must b{
+    color: red;
+}
+.base-wrap{
+    display: flex;
+    flex: 1;
+    min-width: 360px;
+    align-items: center;
+}
+.base-ul li{
+    float: none;
+    margin: 1em 0;
+}
+span.tip{
+    display: none;
+}
+.form-item {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+.form-item-caption {
+    margin-right: 1em;
+}
+
+.form-item-control {
+    /* padding: 0 .5em; */
+    /* border-radius: 1px; */
+    /* border: 1px solid red; */
+}
+
+input#SearchStartDate {
+    padding: 0 .8em;
+}
+.filterForm-row {
+    display: flex;
+    margin: 1em 0;
+}
+.form-select {
+    position: relative;
+    display: flex;
+}
+
+.form-input {
+    position: relative;
+    width: 160px;
+    border: 1px solid #ddd;
+    padding: 2px 4px;
+}
+.form-list {
+    position: absolute;
+    top: 20px;
+    background: #3b8704;
+}
+.form-list ul{
+    margin: 0;
+    padding: 0;
+}
+.form-list li{
+    float: none;
+    color: #fff;
+    cursor: pointer;
+    width: 151px;
+    padding: 0 10px;
+}
+#selectUl,
+#areaUl,
+ul#bigUl
+{
+    display: none;
+}
+.form-list li:hover{
+    background: #4eb900;
+}
+.form-input-select {
+    position: relative;
+    cursor: pointer;
+}
+.form-input-select:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: inline-block;
+    content: "";
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid #9a9898;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.arrow {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #ada7a7;
+}
+.btn-search{
+
+}

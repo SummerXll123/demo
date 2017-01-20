@@ -1,0 +1,65 @@
+<div class="module-cont title">
+	<div class="receptionStoreWrapper">
+		<span class = "store"></span>
+		<span id = "receptionStore"></span>
+	</div>
+	<div class="receptionCountWrapper">
+		<p class="pd-right-10">	
+			今日进店人数：
+			<span id = "storeReceptionCount" class="receptionCount"></span>
+		</p>
+		<p class = "pd-right-10 pd-left-10">
+			您共计接待：
+			<span id = "userReceptionCount" class ="receptionCount"></span>
+		</p>
+		<a class = "rule" href="javascript:void(0);">
+			[不了解规则？点我啦]
+		</a>
+	</div>
+	<div class="receptingWrapper">
+		<span class = "clock"></span>
+		<p>
+			接待客户中 
+			<span class="timeStr"></span>
+		</p>
+	</div>
+	<div class="receptionEnd">	
+		<span class = "end"></span>
+		接待结束
+	</div>
+	<div class="dialog endRecpetionDialog" id="endRecpetionDialog">
+		<div class="dialog-mask"></div>
+	    <div class="dialog-cont">
+	    	<div class="dialog-hd">
+	    		<h3>结束接待</h3>
+	    		<button type="button" class="dialog-btn-close"></button>
+	    	</div>
+		    <div class="dialog-bd">
+		    	<form class="endForm" action="">
+	    		  	<p class="isVisitStoreWrapper relative">
+		    		  	<label class = "relative" for="name"><em class = "necessary">*</em>客人是否到店：</label>
+			 			<input type="radio" name="isVisitStore" id="visited" checked ="checked" data-visited ="1"/>到店
+		    		  	<label for="visited"><em class="circle"></em></label>
+			 			<input type="radio" name="isVisitStore" id="notVisited" data-visited ="2"/>未到店
+			 			<label for="notVisited"><em class="circle"></em></label>
+	    		  	</p>
+	    		  	<p class="visitedCountWrapper">
+				  		<label class = "relative" for="visitedCount"><em class = "necessary">*</em>此次接待人数：</label>
+		    			<input type="number" id="visitedCount" name ="visitedCount" required = "required" value = "1"/>
+		    			<em class="tip" id="receptionNumTip">i</em>
+	    		  	</p>
+	    		  	<p class="receptionRemarkWrapper">
+	    		  		<label class = "relative" for="receptionRemark">接待备注：</label>
+			 			<textarea name="receptionRemark" id="receptionRemark" placeholder = "请输入接待备注，非必填，最多输入100字" maxlength="1000" cols="48" rows="5"></textarea>
+			 			<p class="canInput"><span>还可以输入<span class="canInputNum">100</span>字</span></p>
+	    		  	</p>
+    		  		<p class="endReceptionBtnWrapper">
+				  		<input type="submit" id="ensureEndBtn" value="确定结束">
+			  			<input type="submit" id="goOnReceptionBtn" value="继续接待">
+	    		  	</p>
+		    	</form>
+		    </div>
+		    <div class="dialog-ft"></div>
+	    </div>
+	</div>
+</div>

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://crm.17usoft.com/sell/common/Content/Style/workPlat/normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://crm.17usoft.com/Sell/CRM/Content/style/PagerStyle.css">
+    <link rel="stylesheet" type="text/css" href="http://file.40017.cn/quyu/Public/eui/eui.css ">
+    <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/vipMember.css?vip=2017011901">
+    <link rel="stylesheet" type="text/css" href="../laydate/need/laydate.css">
+</head>
+<body>
+<div class="main-hd">
+    <div class="g-content g-tab">
+        <div class="vipWrapper" id="vipWrapper">
+            <ul id="vipUl">
+                <li>会员分布</li>
+                <li>活动信息</li>
+                <li class="on">活动信息</li>
+            </ul>
+        </div>
+        <div class="vipDrop" id="vipDrop">
+            <div class="vipDown" style="display: none">
+                <div class="vipPart">
+                    <div class="vipStyle vipCount">
+                        <div class="vip-content">
+                            <ul id="vipTab">
+                                <li data-type="CountMember">
+                                    <span>全国总会员数</span>
+                                    <strong class="memberValue">70,282</strong>
+                                </li>
+                                <li data-type="EffectiveMember">
+                                    <span>有效会员数</span>
+                                    <strong class="memberValue">70</strong>
+                                </li>
+                                <li data-type="OutMember">
+                                    <span>过期会员数</span>
+                                    <strong class="memberValue">70ss2</strong>
+                                </li>
+                                <li data-type="TodayMember">
+                                    <span>今日消费会员数</span>
+                                    <strong class="memberValue">70ss2</strong>
+                                </li>
+                                <li data-type="AddMember">
+                                    <span class="memberValue">今日新增会员数</span>
+                                    <strong class="todateAdd">70ss2</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vipStyle vipAge">
+                        <h3 class="vipTit">百旅会会员年龄分布1</h3>
+                        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                        <div id="mainAge" style="width: 600px;height:400px;"></div>
+                    </div>
+                </div>
+                <div class="vipStyle VipTopWrapper">
+                    <div class="vipTop">
+                        <h3 class="vipTit">百旅会1月目标完成率TOP10</h3>
+                        <div id="part-tabBtn">
+                            <ul id="part-tabBtnUl">
+                                <li class="on">
+                                    <button type="button" class="btn-ui curr" data-type="1">区域</button>
+                                </li>
+                                <li>
+                                    <button type="button" data-type="2" class="btn-ui">大区</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-Vip" id="tab-Vip">
+                        <div class="tab-list" style="display: block">
+                            <div id="vipTop" style="width: 600px;height:400px;"></div>
+                        </div>
+                        <div class="tab-list" style="display: none">
+                            <h3 class="vipTit">百旅会分布图</h3>
+                            <div id="memberProvice" style="width: 1000px;height:600px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="ttjj" id="tijiao">
+            </div>
+            <div class="vipDown" style="display: none">
+                <div class="vipMessage">
+                    <div class="base-message">
+                        <h4 class="base-tit">基本信息</h4>
+                        <div class="base-content">
+                            <ul class="base-ul">
+                                <li>
+                                    <div class="base-info">
+                                        <div class="base-wrap base-left">
+                                            <span class="must">
+                                                <b>*</b>
+                                                姓名
+                                            </span>
+                                            <div class="form-item-control">
+                                                <input id="name" placeholder="输入姓名" type="text" data-type="name">
+                                                <span class="tip"></span>
+                                            </div>
+                                        </div>
+                                        <div class="base-wrap base-right">
+                                            <span class="must">
+                                                <b>*</b>
+                                                性别
+                                            </span>
+                                            <div class="form-item-control">
+                                                <input name="sex" type="radio">男
+                                                <input name="sex" type="radio">女
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="base-info">
+                                        <div class="base-wrap base-left">
+                                            <span class="must">
+                                                <b>*</b>
+                                                邮箱
+                                            </span>
+                                            <div class="form-item-control">
+                                                <input id="email" placeholder="输入邮箱" type="text" data-type="email">
+                                                <span class="tip"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="base-info">
+                                        <div class="base-wrap base-left">
+                                            <span class="must">
+                                                <b>*</b>
+                                                手机号
+                                            </span>
+                                            <div class="form-item-control">
+                                                <input id="tel" placeholder="输入手机号" type="text" data-type="tel">
+                                                <span class="tip"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="base-info">
+                                        <div class="base-wrap base-left">
+                                            <span class="must">
+                                                <b>*</b>
+                                                生日
+                                            </span>
+                                            <div class="form-item-control">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <button type="button" class="save" id="submit">保存</button>
+                        <!--<input type="button" value="提交" id="submit">-->
+                    </div>
+
+                </div>
+            </div>
+            <div class="vipDown" style="display: block">
+                <div class="main">
+                    <section class="filter" id="filter">
+                        <div class="section-bd">
+                            <div class="filterForm">
+                                <div class="filterForm-row">
+                                    <div class="form-item">
+                                        <div class="form-item-caption">
+                                            <label>开始时间：</label>
+                                        </div>
+                                        <div class="form-item-control">
+                                            <input onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="form-item-caption">
+                                            <label>结束时间：</label>
+                                        </div>
+                                        <div class="form-item-control">
+                                            <input id="SearchEndDate" type="text" class="laydate-icon"
+                                                   placeholder="请输入日期" readonly="">
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="form-item-caption">
+                                            <label>转化时间：</label>
+                                        </div>
+                                        <div class="form-item-control">
+                                            <input id="SearchConversionDate" type="text" class="laydate-icon"
+                                                   placeholder="请输入日期" readonly="">
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="form-item-caption">
+                                            <label>至：</label>
+                                        </div>
+                                        <div class="form-item-control">
+                                            <input id="SearchToDate" type="text" class="laydate-icon"
+                                                   placeholder="请输入日期" readonly="">
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="form-item-caption">
+                                            <label>活动主题</label>
+                                        </div>
+                                        <div class="form-item-control">
+                                            <div class="form-select">
+                                                <div class="form-input">
+                                                    <div class="form-input-select" id="selectWrap">全部</div>
+                                                </div>
+                                                <div class="form-list">
+                                                    <ul id="selectUl">
+                                                        <li>全部</li>
+                                                        <li>我要上春晚</li>
+                                                        <li>百旅会</li>
+                                                        <li>年货节</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filterForm-row">
+                                    <div class="form-item">
+                                        <div class="form-item-caption">
+                                            <label>举办区域</label>
+                                        </div>
+                                        <div class="form-item-control">
+                                            <div class="form-select">
+                                                <div class="form-input">
+                                                    <div class="form-input-select" id="areaWrap">全部</div>
+                                                </div>
+                                                <div class="form-list">
+                                                    <ul id="areaUl">
+                                                        <li>全部</li>
+                                                        <li>我要上春晚</li>
+                                                        <li>百旅会</li>
+                                                        <li>年货节</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="form-item-caption">
+                                            <label>大区</label>
+                                        </div>
+                                        <div class="form-item-control">
+                                            <div class="form-select">
+                                                <div class="form-input">
+                                                    <div class="form-input-select" id="bigWrap">全部</div>
+                                                </div>
+                                                <div class="form-list">
+                                                    <ul id="bigUl">
+                                                        <li>全部</li>
+                                                        <li>我要上春晚</li>
+                                                        <li>百旅会</li>
+                                                        <li>年货节</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <div class="form-item-caption">
+                                            <button type="button" class="btn-ui btn-search" data-type="1">查询</button>
+                                            <!--<label>大区</label>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="charts" id="charts"></section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="main-bd">
+
+</div>-->
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../PlugInunit/echarts.js"></script>
+<script type="text/javascript" src="../PlugInunit/china.js"></script>
+
+<script type="text/javascript" src="../laydate/laydate.js"></script>
+<script type="text/javascript" src="../js/vipMember.js?vvv=201701188"></script>
+
+</body>
+</html>

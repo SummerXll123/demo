@@ -1,0 +1,19 @@
+{
+  "State":1,
+  "Data": {
+    "CountMember":"5656",
+    "EffectiveMember":"66",
+    "OutMember":"4",
+    "TodayMember":"2",
+    "AddMember":"55"
+  },
+  "MemberAgeDistributionRt":{
+    "MemberAgeDistriName":["20岁以下", "20-39岁", "40到59岁", " 60岁以上"],
+    "MemberAgeDistriValue":[3032, 18911, 14335, 7899]
+  },
+  "NewMemberTop10": {
+    "NewMemberCityName": ["上海", "苏州", "北京", "广州","南京","无锡","杭州","深圳","常州","南通"],
+    "NewMemberCityValue":[615, 345, 123, 345, 455, 5665, 344, 566, 554, 45]
+  }
+}
+

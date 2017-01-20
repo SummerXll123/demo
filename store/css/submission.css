@@ -1,0 +1,211 @@
+html {
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+li{
+    list-style: none;
+}
+a,button,input{
+    outline: none;
+}
+.g-header {
+    display: flex;
+}
+
+.main-hd {
+    padding: 3em 2em;
+}
+
+.g-content {
+    display: flex;
+    margin-right: 2em;
+}
+
+.eui-item-control > .eui-input {
+    padding: .3em .5em;
+    border: .1em solid #ddd;
+    border-radius: .3em;
+}
+
+.g-content > .g-tit {
+    align-items: center;
+    display: flex;
+    margin: 0 .5em;
+}
+
+.btn-wrapper {
+    color: #fff;
+}
+
+.btn-wrapper .eui-btn {
+    padding: .3em 1em;
+    border-radius: .3em;
+}
+.btn-wrapper .eui-btn.eui-btn-primary{
+    border: #4eb900;
+    background: #4eb900;
+}
+.btn-wrapper .eui-btn.eui-btn-primary:hover{
+    background: #47a503;
+}
+.btn-wrapper .eui-btn.eui-btn-import{
+    border: #fd7127;
+    background: #fd7127;
+}
+.btn-wrapper .eui-btn.eui-btn-import:hover{
+    background: #f7681c;
+}
+
+.table-wrapper {
+    border: .1em solid #ddd;
+    margin: 0 1em 3em;
+    padding: 2em 1.6em;
+}
+.table-row {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+.btn-wrapper-import{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border: .1em solid #ddd;
+    text-align: center;
+}
+table>thead{
+    line-height: 33px;
+    border-bottom: 2px solid #eeeeee;
+    background-color: #f8f9f8;
+}
+table>tbody>tr{
+    line-height: 2em;
+}
+table>tbody>tr:nth-child(2n){
+    background: #fff;
+}
+table>tbody>tr:hover{
+    background: #c2d8b3;
+}
+td,th{
+    border: .1em solid #ddd;
+}
+
+.eui-btn-sort{
+position: relative;
+color: #333333;
+border-color: transparent;
+background-color: transparent;
+font-weight: inherit;
+}
+.eui-btn.eui-btn-sort::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -0.54em;
+    margin-top: -0.46em;
+    border-top: 0px solid transparent;
+    border-right: .4em solid transparent;
+    border-bottom: 0.42em solid #999999;
+    border-left: .4em solid transparent;
+
+}
+.eui-btn.eui-btn-sort::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: .4em solid #999;
+    border-left: .4em solid transparent;
+    border-right: .4em solid transparent;
+    border-bottom: .4em solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -0.54em;
+}
+.eui-btn-sort.eui-btn-sort-active {
+    color: #fd7127;
+}
+.eui-table {
+    margin-bottom: 2em;
+}
+.seclect-dropdown {
+    visibility: hidden;
+}
+.eui-select:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-top: .3em solid #969090;
+    border-bottom: .3em solid transparent;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+}
+.eui-select.eui-padding {
+    padding: 0 2em;
+    cursor: pointer;
+}
+.eui-input-wrapper {
+    position: relative;
+}
+.eui-select-dropDown {
+    position: absolute;
+    top: 30px;
+    padding: 0 .2em;
+}
+.eui-select-dropDown li{
+    width: 100%;
+    background: #4eb900;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: -1px;
+}
+.eui-select-dropDown li:hover{
+    cursor: pointer;
+    background: #47a503;
+}
+#droDown{
+    display: none;
+    width: 86px;
+    padding: 0;
+    margin: 0 .57em;
+}
+#droDown ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#meterialUl{
+    display: flex;
+}
+#meterialUl>li{
+    padding: .5em 1em;
+    margin: 0 .2em;
+}
+.on,
+.hover,
+#meterialUl>li:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #4eb900;
+}
+.tip{
+    color: red;
+    display: none;
+
+}
+.passenger{
+    display: none;
+}
+.margin-top{
+    margin-top: 3em;
+}

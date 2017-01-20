@@ -1,0 +1,190 @@
+.queryItem  {
+	font-family:'Microsoft YaHei';
+}  
+.queryItem  input {
+	border:none;
+}
+.queryItem input:focus {
+	outline:none;
+}
+.queryItem ul {
+	list-style:none;
+}
+.queryItem dl {
+	float:left;
+	margin-bottom:15px;
+}
+.queryItem dl:nth-child(1) {
+	 margin-right:60px;
+}
+.queryItem dl:nth-child(2) {
+	 margin-right:60px;
+}
+.queryItem dt {
+	font-size:14px;
+	display:inline-block;	
+	margin-right:4px; 
+}
+.queryItem dd {
+	width:132px;
+	height:32px;
+	display:inline-block;
+	margin-left:-10px;
+}
+.time dd div{
+	width:314px;
+	height:32px;
+}
+.time dd {
+	margin-left:0px;
+	vertical-align:-12px;
+}
+.time .timeStart,
+.time .timeStop {
+	width:120px;
+	height:28px;
+	border:1px solid #e7e7e7;
+	border-radius:4px;
+	font-size:12px;
+	text-indent:6px; 
+	vertical-align:12px;
+}
+.time span {
+	vertical-align:12px;
+	margin:0 4px;
+}
+.orderQuery {
+	clear:both;
+	display:flex;
+}
+.queryItem .queryInput {
+	width:450px;
+	height:28px;
+	border:1px solid #e7e7e7;
+	font-size:12px;
+	border-radius:4px;
+	text-indent:6px;	 
+}
+.queryItem .queryBtn {
+	width:100px;
+	height:30px;
+	border-radius:4px;
+	background-color:#faa824;
+	color:#fff;
+	font-size:14px;
+	margin-left:25px; 
+}
+.queryItem .queryBtn:disabled {
+	background-color:#f5f5f6;
+}
+.tablepage {
+	width:100%;
+	overflow:hidden;
+}
+.tableQuery {
+	margin-top:20px;
+	/*width:1344px;*/
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+.tableQuery td {
+	border-top:1px solid #eaeeee;
+	border-right:1px solid #eaeeee;
+	border-bottom:1px solid #eaeeee;
+}
+.tableQuery td:nth-child(1) {
+	border-left:1px solid #eaeeee;
+}
+.tableQuery .col1 {
+	width:160px;
+}
+.tableQuery .col2 {
+	width:160px;
+}
+.tableQuery .col3 {
+	width:140px;
+}
+.tableQuery .col4 {
+	/*width:340px;*/
+}
+.tableQuery .col5{
+	width:190px;
+}
+.tableQuery .col6{
+	width:300px;
+}
+.tableQuery tbody tr {
+	height:45px;
+}
+.tableQuery thead tr {
+	background-color:#f5f8f8;
+	height:35px;
+}
+.tableQuery a{
+	/*width:70px;*/
+	width:26%;
+	height:25px; 
+	line-height:25px;
+	display:inline-block;
+	border-radius:2px;
+	color:#fff;
+	text-decoration:none;
+}
+.tableQuery .orderdetail {
+	background-color:#79c346;
+	margin-right:12px;
+}
+.tableQuery .ordermoney {
+	background-color:#f65239;
+}
+.tableQuery .aurl {
+	display:block;
+	width:100%;
+	/*height:100%;*/
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.tableQuery .money {
+	display:none;
+}
+.tableQuery tbody tr:nth-child(odd) {
+	background-color:#fff;
+}
+.tableQuery tbody tr:nth-child(even) {
+	background-color:#f5f8f8;
+}
+/*分页显示*/
+#pager {
+	font-family:'Microsoft Yahei';
+	margin-top:15px;
+}
+#pager a{
+	display:inline-block;
+}
+#pager span{
+	display:inline-block;
+}
+#pager a:hover span{
+	background-color: #faa824;
+	color:#fff;
+	border-color:#f5f5f6;
+}
+#pager span{
+	background-color: #f5f5f6; 
+	border-radius:4px;
+}
+#pager span.on{
+	background-color: #faa824;
+	border-radius:4px;
+	border-color:#f5f5f6;
+}
+
+
+
+ 

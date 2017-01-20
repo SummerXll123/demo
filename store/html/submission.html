@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://crm.17usoft.com/sell/common/Content/Style/workPlat/normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://crm.17usoft.com/Sell/CRM/Content/style/PagerStyle.css">
+    <link rel="stylesheet" type="text/css" href="http://file.40017.cn/quyu/Public/eui/eui.css ">
+    <link rel="stylesheet" type="text/css" href="../fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/submission.css">
+    <link rel="stylesheet" type="text/css" href="../laydate/need/laydate.css">
+</head>
+<body>
+<div class="main-hd">
+    <div class="g-header">
+        <div class="g-content" id="begin-time">
+            <div class="g-tit">
+                <label>开始时间:</label>
+            </div>
+            <div class="eui-item-control">
+                <input class="laydate-icon eui-input" id="begin" value="2016-10-01" onclick="laydate({ istime: true, format: 'YYYY-MM-DD hh:mm:ss',max: $(this).parents('#begin-time').siblings('#end-time').find('#end').val() })">
+            </div>
+        </div>
+        <div class="g-content" id="end-time">
+            <div class="g-tit">
+                <label>结束时间:</label>
+            </div>
+            <div class="eui-item-control">
+                <input class="laydate-icon eui-input" id="end" value="2016-10-01" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss', min: $(this).parents('#end-time').siblings('#begin-time').find('#begin').val() })">
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button type="button" class="eui-btn eui-btn-primary" id="search">查询</button>
+        </div>
+    </div>
+    <div class="g-header">
+        <div class="g-content">
+            <div class="g-tit">
+                <label>素材类型</label>
+            </div>
+            <div class="eui-input-wrapper">
+                <div class="eui-select eui-padding" id="selectWrapper">全部</div>
+                <div class="eui-select-dropDown" id="droDown">
+                    <ul>
+                        <li data-value="1" title="全部">全部</li>
+                        <li data-value="2" title="图文">图文</li>
+                        <li data-value="3" title="素材">素材</li>
+                        <li data-value="4" title="表格">表格</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-header margin-top">
+        <div class="g-content">
+            <div class="material-wrapper">
+                <ul id="meterialUl">
+                    <li class="on" data-num="1">全部</li>
+                    <li data-num="2" class="3" >图文</li>
+                    <li data-num="3" >素材</li>
+                    <li data-num="4">表格</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-bd">
+    <div class="table-wrapper">
+        <div class="table-row">
+            <h3>投稿阅读统计表</h3>
+            <div class="btn-wrapper-import">
+                <div class="btn-wrapper">
+                    <button type="button" class="eui-btn eui-btn-import">导出</button>
+                </div>
+            </div>
+        </div>
+        <div class="eui-table">
+            <table id="tableCount">
+                <thead>
+                <tr>
+                    <th>
+                        <button type="button" class="eui-btn eui-btn-sort" data-columNname="Time" id="eui-sort-1">时间
+                        </button>
+                        <!--<button type="button" class="eui-btn eui-btn-sort">时间</button>-->
+                    </th>
+                    <th>
+                        <button type="button" class="eui-btn eui-btn-sort" data-columNname="Part" id="eui-sort-2"
+                                onclick="$.sortTable.sort('tableSort',1)" style="cursor: pointer;">区域
+                        </button>
+                    </th>
+                    <th>负责人</th>
+                    <th>
+                        <button type="button" class="eui-btn eui-btn-sort" data-columNname="TitleNum" id="eui-sort-3">
+                            稿件标题数
+                        </button>
+                    </th>
+                    <th>
+                        <button type="button" class="eui-btn eui-btn-sort" data-columNname="ReadNum" id="eui-sort-4">
+                            阅读数
+                        </button>
+                    </th>
+                    <th>
+                        素材类型
+                    </th>
+                    <th>
+                        编辑
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                </tr>
+                <tr>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                </tr>
+                <tr>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                </tr>
+                <tr>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div id="pagerCount"></div>
+    </div>
+    <div class="passenger">
+        <div class="row">
+            <label>用户名：<input type="text" name="username" data-name="user_name" id="userName"><span class="tip" id="spanid">用户名由英文字母
+                和数字组成的4-16位字符</span></label>
+        </div>
+        <div class="row">
+            <label>密码：<input type="password" name="password" data-name="密码" id="passWord"><span class="tip">密码由英文字母和数字组成的4-10位字符</span></label>
+        </div>
+        <div class="row">
+            <label>确认密码：<input type="password" name="password" data-name="确认密码" id="repass"></label><span></span>
+        </div>
+        <div class="row">
+            <label>性别：<input type="radio" id="radio" value="1">男
+                <input type="radio" id="radio2" value="1">女
+            </label>
+        </div>
+        <div class="row">
+            <label>爱好：</label>
+            <input type="checkbox" name="hobby" id="hobby1">唱歌
+            <input type="checkbox" name="hobby" id="hobby2">跳舞
+            <input type="checkbox" name="hobby" id="hobby3">看书
+            <input type="checkbox" name="hobby" id="hobby4">画画
+        </div>
+        <div class="row">
+            <select name="province" class="inputstyle" id="province" onchange="checkProvince()">
+                <option>--请选择省份--</option>
+                <option value="甘肃省">甘肃省</option>
+                <option value="海南省">海南省</option>
+                <option value="福建省">福建省</option>
+                <option value="山东省">山东省</option>
+                <option value="江西省">江西省</option>
+                <option value="广西省">广西省</option>
+            </select>
+            <select name="city" class="inputstyle" id="city"> <option></option> </select>
+        </div>
+        <div class="row">
+            <input type="button" value="提交" id="submitBtn">
+        </div>
+
+    </div>
+    <div class="margin" id="inputId">
+        <label>姓名：</label><input type="text" name="name" data-leixing="姓名" id="name" class="requird"><span id="span" class="tip">不能为空</span><br>
+        <label>邮箱：</label><input type="text" name="email" data-leixing="邮箱" id="email3" class="requird"><span class="tip">不能为空</span><br>
+        <label>身份证：</label><input type="text" name="personId" id="personId" class="requird"><span class="tip"></span><br>
+        <input type="button" value="确认" id="inputBtn">
+    </div>
+    <div class="table-wrapper">
+        <div class="table-row">
+            <h3>投稿阅读统计排名</h3>
+            <div class="btn-wrapper btn-wrapper-import">
+                <button type="button" class="eui-btn eui-btn-import">导出</button>
+            </div>
+        </div>
+        <div class="eui-table">
+            <table id="readTable">
+                <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>区域总部</th>
+                    <th>供稿数量</th>
+                    <th>供稿数得分（权重50%）</th>
+                    <th>总阅读量</th>
+                    <th>编辑</th>
+                    <th>保存</th>
+                    <th>删除</th>
+                </tr>
+                </thead>
+                <tbody id="readTbody">
+                <tr>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-update">编辑</button></td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-save">保存</button></td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-del">删除</button></td>
+                </tr>
+                <tr>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-update">编辑</button></td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-save">保存</button></td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-del">删除</button></td>
+                </tr>
+                <tr>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-update">编辑</button></td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-save">保存</button></td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-del">删除</button></td>
+                </tr>
+                <tr>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td>2016-12-20</td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-update">编辑</button></td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-save">保存</button></td>
+                    <td><button type="button" class="eui-btn eui-btn-primary btn-del">删除</button></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="addBtn">
+                <button type="button" class="eui-btn eui-btn-primary btn-add">增加一行</button>
+                </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="http://crm.17usoft.com/Sell/CRM/Content/Script/PagerView.js"></script>
+<script type="text/javascript" src="http://crm.17usoft.com/Sell/CRM/Content/Plugins/layer/layer.js"></script>
+<script type="text/javascript" src="http://file.40017.cn/quyu/Public/eui/eui.js"></script>
+<script type="text/javascript" src="../laydate/laydate.js"></script>
+
+<script type="text/javascript" src="../js/submission.js"></script>
+</body>
+</html>

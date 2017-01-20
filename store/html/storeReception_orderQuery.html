@@ -1,0 +1,47 @@
+<div class="queryItem">
+	<dl>
+		<dt class="itemName">项目名称：</dt>
+		<dd>
+			<div class="dropDown" id="orderProjectDropDown">
+	            <button type="button" class="dropDown-btn" data-value="0">全部</button>
+            	<ul class="dropDown-list">
+            	    <li data-value="0" class="selected">全部</li>
+            	    <li data-value="1">出境</li>
+            	    <li data-value="2">国长</li>
+            	    <li data-value="3">邮轮</li>
+            	    <li data-value="4">周边自由行</li>
+            	    <li data-value="5">周边跟团游</li>
+            	</ul>
+            </div>
+		</dd>
+	</dl>
+	<dl>
+		<dt class="orderState">订单状态：</dt>
+		<dd>
+			<div class="dropDown" id="orderStateDropDown">
+	            <button type="button" class="dropDown-btn" data-value="-1">全部</button>
+            	<ul class="dropDown-list"></ul>
+            </div>
+		</dd>
+	</dl>
+	<dl class="time">
+		<dt class="timeRange">时间范围：</dt>
+		<dd>
+			<div>
+				<input class="timeStart laydate-icon" id="timeStart" type="text" placeholder=""> 
+				<span>~</span>
+				<input class="timeStop laydate-icon" id="timeStop" type="text" placeholder=""> 
+			</div>
+		</dd>
+	</dl>
+	<div class="orderQuery">
+		<input class="queryInput" id="orderSearchCont" type="text" placeholder="可输入下单手机号、客户订单号、预订人姓名、联系人姓名查询订单">
+		<input class="queryBtn" type="button" value="查询">
+	</div>	
+	<div class="tablepage">
+		<table class="tableQuery"></table>
+		<div id="pager"></div>	
+	</div>
+</div>
+ 
+ 

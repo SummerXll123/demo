@@ -1,0 +1,41 @@
+{
+  "Data": {
+    "DataList": [
+      {
+        "Time": "2016/9/5",
+        "Part": "华北区域总部",
+        "ChargePerson": "张三",
+        "TitleNum": "旅游春晚我们来了！",
+        "ReadNum": "23",
+        "Source":"1"
+      },
+      {
+        "Time": "2016/9/6",
+        "Part": "区域总部",
+        "ChargePerson": "张三",
+        "TitleNum": "春晚我们来了！",
+        "ReadNum": "223",
+        "Source":"2"
+      },
+      {
+        "Time": "2016/9/3",
+        "Part": "北京总部",
+        "ChargePerson": "张三",
+        "TitleNum": "春节！",
+        "ReadNum": "45",
+        "Source":"3"
+      },
+      {
+        "Time": "2016/9/3",
+        "Part": "北京总部",
+        "ChargePerson": "张三",
+        "TitleNum": "春节！",
+        "ReadNum": "45",
+        "Source":"3"
+      }
+    ],
+    "PageCount": 4,
+    "PageIndex": 1,
+    "PageSize":2
+  }
+}

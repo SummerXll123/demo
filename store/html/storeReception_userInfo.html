@@ -1,0 +1,126 @@
+<div class="hasMobile">
+	<div class="variedMember">
+	<!-- </div> -->
+	<ul class = "userInfoUl">
+		<li class = "userInfoItem">
+			<span class = "infoLabel">客户姓名：</span>
+			<span class = "infoCont" data-key = "MemberName"></span>
+		</li>
+		<li class = "userInfoItem">
+			<span class = "infoLabel">手机号：</span>
+			<span class = "infoCont" data-key = "MemberMobile"></span>
+		</li>
+		<li class = "userInfoItem">
+			<span class = "infoLabel">会员ID：</span>
+			<span class = "infoCont" data-key = "MemberId"></span>
+		</li>
+	</ul>
+	<ul class = "userInfoUl">
+		<li class = "userInfoItem">
+			<span class = "infoLabel">绑定状态：</span>
+			<span class = "infoCont" id = "boundStatus" data-key ="BoundStatus"></span>
+		</li>
+		<li class = "userInfoItem">
+			<span class = "infoLabel">手机归属地：</span>
+			<span class = "infoCont"  data-key = "BelongCity"></span>
+		</li>
+		<li class = "userInfoItem">
+			<span class = "infoLabel">邮箱：</span>
+			<span class = "infoCont" data-key = "Email"></span>
+		</li>
+	</ul>
+	<ul class = "userInfoUl">
+		<li class = "userInfoItem">
+			<span class = "infoLabel">注册时间：</span>
+			<span class = "infoCont" data-key = "RegistTime"></span>
+		</li>
+		<li class = "userInfoItem visitedTimes relative">
+			<span class = "infoLabel">到访次数：</span>
+			<span class = "infoCont" data-key = "VisitCount"></span>
+			<span class="footStep"></span>
+			<div class="visitedTimesDialog" id="visitedTimesDialog">
+			    <div class="visitedTimesDialogCont relative">
+			    	<div class="dialog-hd">
+			    		<h3>到访信息</h3>
+			    		<button type="button" class="dialog-btn-close"></button>
+			    	</div>
+				    <div class="dialog-bd">
+						<table class = "visitedInfo">
+							<thead>
+								<td  class = "width-25">到访时间</td>
+								<td  class = "width-25">接待人</td>
+								<td class = "width-50">接待备注</td>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+				    </div>
+				    <div class="dialog-ft">
+						<div id="visitedPager" style = "width:200px;height:30px"></div>
+				    </div>
+			    </div>
+			</div>
+		</li>
+		<li class = "userInfoItem">
+		</li>
+	</ul>
+	<div class="dialog bindDialog" id="bindDialog">
+		<div class="dialog-mask"></div>
+	    <div class="dialog-cont">
+	    	<div class="dialog-hd">
+	    		<h3>客户绑定</h3>
+	    		<button type="button" class="dialog-btn-close"></button>
+	    	</div>
+		    <div class="dialog-bd">
+		    	<p class = "bindUserPhone">
+		    		<label>客户号码：</label>
+		    		<span class = "phoneNum"></span>
+		    	</p>
+		    	<form class="bindForm" action="">
+		    		<p class="bindUserName">
+		    			<label  class = "relative" for="memberName"><em class = "necessary">*</em>客户号码：</label>
+		    			<input type="text" id="memberName" name ="memberName" required = "required"/>
+		    			<em class="tip" id="nameTip">i</em>
+		    		</p>
+	    		  	<p class="bindUserSex relative">
+		    		  	性别：
+			 			<input type="radio" name="sex" id="male" checked ="checked" data-sex="1"/>男
+		    		  	<label for="male"><em class="circle"></em></label>
+			 			<input type="radio" name="sex" id="female" data-sex="2"/>
+			   		  	女
+			   		  	<label for="female"><em class="circle"></em></label>
+	    		  	</p>
+	    		  	<p class="btnWrapper">
+				  		<input type="button" class = "bindBtn" id="bindRegisterBtn" value="绑定并注册" data-btnStatus="1">
+			  			<input type="button" class = "bindBtn" id="bindBtn" value="绑定" data-btnStatus="2">
+	    		  	</p>
+		    	</form>
+		    </div>
+		    <div class="dialog-ft"></div>
+	    </div>
+	</div>
+</div>
+<div class="inputMobile">
+	<input type="text" placeholder="请输入客户姓名" id="mobilePhone">
+	<input type="button" value="确定" id="ensurePhoneNum">
+</div>
+<div class="dialog mobilePhoneDialog" id="mobilePhoneDialog">
+	<div class="dialog-mask"></div>
+    <div class="dialog-cont">
+    	<div class="dialog-hd">
+    		<h3>提示</h3>
+    		<button type="button" class="dialog-btn-close"></button>
+    	</div>
+	    <div class="dialog-bd">
+	    	<div class="ensureWrapper">
+	    		<p style="font-size:14px">此次用于接待的客户手机号为：</p>
+	    		<p class="phoneNum"></p>
+	    	</div>
+		  	<p class="phoneBtnWrapper">
+		  		<input type="button" class = "phoneBtn" id="ensurePhone" value="确定" >
+	  			<input type="button" class = "phoneBtn" id="reInput" value="重新输入" >
+		  	</p>
+	    </div>
+	    <div class="dialog-ft"></div>
+    </div>
+</div>

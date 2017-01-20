@@ -1,0 +1,56 @@
+.order input {
+	border:none;
+}
+.order input:focus {
+	outline:none;
+}
+.order {
+	min-width: 166px;
+	font-family:'Microsoft YaHei';
+}   
+.orderItem .orderSelect {
+	font-size:14px;
+} 
+.orderItem .orderUl {
+	list-style:none;
+	padding-left:0;
+	overflow:hidden;
+	margin-top:-4px;
+}
+.orderItem .orderUl li {
+	float:left;
+	width:120px;
+	height:24px;
+	line-height:24px;
+	background-color: #79c346;
+	border-radius:6px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	margin-right:10px;
+	margin-top:4px;
+}
+.orderItem .orderUl .liHover {
+	background-color:#faa824;
+}
+.orderForm {
+	margin-top: 16px;
+	display:flex;
+}
+.orderForm .orderTxt {
+	width:275px;
+	height:28px;
+	border:1px solid #e7e7e7;
+	border-radius:4px;
+	font-size:12px;
+	text-indent:6px;
+}
+.orderForm .orderBtn {
+	width:100px;
+	height:30px;
+	border-radius:4px;
+	background-color:#faa824;
+	color:#fff;
+	font-size:14px;
+	margin-left:6px;
+}

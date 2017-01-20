@@ -1,0 +1,67 @@
+html {
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+li{
+    list-style: none;
+    float: left;
+}
+a,button,input{
+    outline: none;
+}
+.g-header {
+    display: flex;
+}
+
+.main-hd {
+    padding: 3em 2em;
+}
+
+.g-content {
+    display: flex;
+    margin-right: 2em;
+}
+.vipDrop {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    /* border-bottom: 1px solid #ddd; */
+    background: #c6bfcc;
+    position: absolute;
+    top: 3em;
+    /* width: 100%; */
+    height: inherit;
+    display: flex;
+    flex: 1;
+}
+.vipDown {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    position: absolute;
+}
+#vipUl {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: .1em solid #ddd;
+}
+.vipWrapper li{
+    padding: .3em;
+    margin: 0 .3em;
+    font-size: 1.2em;
+    border-bottom: .2em solid #fff;
+}
+.vipWrapper li:hover{
+    color: #4eb900;
+    border-bottom: .2em solid #4eb900;
+    cursor: pointer;
+    /*margin-bottom: .1em;*/
+}
+#vipWrapper{
+    
+}
+.g-tab{
+    position: relative;
+    padding: .2em;
+}
